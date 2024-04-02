@@ -1,0 +1,6 @@
+@PhoneBookCrud_HostAddress = http://localhost:5010
+
+GET {{PhoneBookCrud_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

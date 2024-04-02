@@ -1,0 +1,24 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Modal con contenido dinámico</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <!-- <div class="form-group">
+          <label for="contactId">Contact ID</label>
+          <input type="number" class="form-control" id="contactId" [(ngModel)]="newContact.ContactId" name="contactId">
+        </div>
+        <div class="form-group">
+          <label for="typeContactId">Type Contact ID</label>
+          <input type="text" class="form-control" id="typeContactId" [(ngModel)]="newContact.TypeContactId" name="typeContactId">
+        </div> -->
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+      <!-- <button type="button" class="btn btn-primary" (click)="">Save Changes</button> -->
+    </div>
+</ng-template>
